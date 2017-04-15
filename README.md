@@ -27,7 +27,7 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
     * Edit cells > Transform
     * Enter expression above
     * Double-check year is accurate in formatted date
-* Review steps taken in Undo/Redo
+* Review steps taken in Undo/Redo tab on left side of project view
 
 ## Cushman-Dataset-Small.openrefine.tar.gz
 Practice using reconciliation services to turn text strings into Linked Data URIs based on controlled vocabularies. Map fields in dataset to RDF properties and export as Linked Data RDF. Import this project file into OpenRefine and you will have a dataset of 20 records.
