@@ -1,5 +1,5 @@
 # openrefine-tutorial
-Offers sample OpenRefine projects and lessons for trying clean-up tasks, reconciliation to Linked Data, and exporting as RDF.
+This tutorial taught as part of <a href="https://libraries.indiana.edu/seminars-and-workshops">Indiana University Scholars Commons Workshop Series</a>. Offers sample OpenRefine projects and lessons for trying clean-up tasks, reconciliation to Linked Data, and exporting as RDF.
 
 We're skipping the process to create a project in OpenRefine due to location of OpenRefine app on computers used in workshop series.
 
