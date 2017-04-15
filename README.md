@@ -58,3 +58,11 @@ In order to use the TGM reconcilation service, you can download and extract the 
 * Select 'TGM' from left-side menu
 * Use default type (Topic)
 * Should result in 100% exact matches for all records with genre
+
+### RDF Mapping
+* Under RDF > Edit RDF Skeleton
+* Add prefixes:
+ * loc: http://id.loc.gov/vocabulary/resourceTypes/
+ * dc: http://purl.org/dc/elements/1.1/
+ * edm: http://www.europeana.eu/schemas/edm/
+
