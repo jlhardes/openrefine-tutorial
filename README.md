@@ -35,9 +35,10 @@ Practice using reconciliation services to turn text strings into Linked Data URI
 ### Wikidata Reconciliation Service
 * **Corporate Names 1**: choose Reconcile > Start reconciling...
 * Click Add Standard Service button and enter: `https://tools.wmflabs.org/openrefine-wikidata/en/api`
-* This adds the reconciliation service. Choose Reconcile > Start reconciling... again and select 'Wikidata Reconciliation Service' from left-side menu
+* This adds the reconciliation service. Choose Reconcile > Start reconciling... again and select 'Wikidata Reconciliation for OpenRefine (en)' from left-side menu
   * Reconcile against 'public company' in list of type options or 'no particular type' at bottom
 * Review results for how much was reconciled (and how much was not)
+* Try reconciling on **Topcial Subject Headings 1** and see how some matches happened but many still do not retrieve a match
 
 ### Thesaurus of Graphic Materials (TGM) Reconciliation Service
 You will need the RDF Extension for OpenRefine, available at https://github.com/fadmaa/grefine-rdf-extension/downloads.  Once you download and extract the file, rename the directory `rdf-extension` and move it to your `extensions` folder in OpenRefine, then restart OpenRefine. See <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions">OpenRefine Wiki - Installing Extensions</a> for further help.
@@ -45,7 +46,7 @@ You will need the RDF Extension for OpenRefine, available at https://github.com/
 In order to use the TGM reconcilation service, you can download and extract the controlled vocabulary to load as a local file for use in OpenRefine from the Library of Congress: http://id.loc.gov/static/data/vocabularygraphicMaterials.ttl.zip
 
 #### Add TGM Reconciliation Service using `tgm.ttl` file:
-* Under RDF > Add reconciliation service > Based on RDF file
+* Under RDF > Add reconciliation service > Based on RDF file...
     * Name: TGM
     * Upload file: `tmg.ttl` (wherever it is located)
     * File format: Turtle
@@ -54,7 +55,7 @@ In order to use the TGM reconcilation service, you can download and extract the 
         * You can open `tgm.ttl` and look at example record in vocab to see that this property is being used for the term label
 
 #### Reconcile against TGM:
-* **Genre1**: Reconcile > Start reconciling...
+* **Genre 1**: Reconcile > Start reconciling...
 * Select 'TGM' from left-side menu
 * Use default type (Topic)
 * Should result in 100% exact matches for all records with genre
@@ -65,13 +66,39 @@ In order to use the TGM reconcilation service, you can download and extract the 
   * loc: http://id.loc.gov/vocabulary/resourceTypes/
   * dc: http://purl.org/dc/elements/1.1/
   * edm: http://www.europeana.eu/schemas/edm/
+
+Goal is to end up with RDF mapping like the following:
+```<http://purl.dlib.indiana.edu/iudl/archives/cushman/P01411> a foaf:Image ;
+	   dc:date "Sat Sep 03 00:00:00 EST 1938" ;
+	   dc:title "A-5 = G.G. bridge from south end." ;
+   	edm:hasType <http://id.loc.gov/vocabulary/graphicMaterials/tgm000464> ;
+   	dc:subject "Mountains" ;
+   	dc:creator "Charles W. Cushman" .```
+
 * Add Creator column to dataset to include 'Charles W. Cushman' value
+    * On column with text values (such as **IU Archives Number**) select Edit column > Add column based on this column
+    * Supply a new column name and in the Expression dialog box enter (with single quotes): `'Charles W. Cushman'`
 * Make Genre URI its own column
-    * `cell.recon.match.id`
+    * **Genre 1**: Edit column > Add column based on this column
+    * Give new column name: Genre URI
+    * Add following in Expression dialog box: `cell.recon.match.id`
+* Under RDF > Edit RDF Skeleton
+    * Change value of subject to be PURL with content as a URI
+        * Add RDF type of foaf:Image
+    * Add properties to match each property listed in goal
+    * Use **Start Date** as text for dc:date
+    * Use **Description from Notebook** as text for dc:title
+    * Use **Genre URI** as URI for emd:hasType
+    * Use **Topical Subject Headings 1** as text for dc:subject
+    * Use **Creator** as text for dc:creator
+    * Use RDF Preview tab as you go to verify that mapping is resulting in desired Linked Data RDF output
+    * Click OK in RDF Schema Alignment to save mapping
 * Export > RDF as Turtle
 
 ## Other Resources
-* OpenRefine Tutorial from Enipedia - http://is.gd/refine
+* <a href="http://is.gd/refine">OpenRefine Tutorial from Enipedia</a>
     * Provides dataset to create project along with various tasks for cleaning
-* OpenRefine Documentation for User - http://openrefine.org/documentation.html
+* <a href="http://openrefine.org/documentation.html">OpenRefine Documentation for User</a>
     * Includes FAQ, OpenRefine wiki, many other tutorials, and a book recommendation
+* <a href="https://docs.google.com/document/d/1rvVOc69NJtNacTqgmkOliOBGDdYI4J1-qqIcRuFrou0/edit?usp=sharing">OpenRefine Instructions: A Guide to Creating an OpenRefine Project Using the Charles W. Cushman Photograph Collection Metadata Dataset</a>
+    * Instructions for creating an OpenRefine project and reconciling the full Cushman dataset
