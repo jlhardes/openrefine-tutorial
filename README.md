@@ -41,6 +41,8 @@ Practice using reconciliation services to turn text strings into Linked Data URI
 * Try reconciling on **Topcial Subject Headings 1** and see how some matches happened but many still do not retrieve a match
 
 ### Thesaurus of Graphic Materials (TGM) Reconciliation Service
+
+#### Add RDF Extension
 You will need the RDF Extension for OpenRefine, available at https://github.com/fadmaa/grefine-rdf-extension/downloads.  Once you download and extract the file, rename the directory `rdf-extension` and move it to your `extensions` folder in OpenRefine, then restart OpenRefine. See <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions">OpenRefine Wiki - Installing Extensions</a> for further help.
 
 In order to use the TGM reconcilation service, you can download and extract the controlled vocabulary to load as a local file for use in OpenRefine from the Library of Congress: http://id.loc.gov/static/data/vocabularygraphicMaterials.ttl.zip
