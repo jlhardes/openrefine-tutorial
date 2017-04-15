@@ -25,9 +25,9 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
 * Format **Start Date**: 
     * <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression to use: `value.toDate().toString('yyyy-MM-dd')`
     * Edit cells > Transform
-    * Enter excpression above
+    * Enter expression above
     * Double-check year is accurate in formatted date
-* Review at steps taken in Undo/Redo
+* Review steps taken in Undo/Redo
 
 ## Cushman-Dataset-Small.openrefine.tar.gz
 Practice using reconciliation services to turn text strings into Linked Data URIs based on controlled vocabularies. Map fields in dataset to RDF properties and export as Linked Data RDF. Import this project file into OpenRefine and you will have a dataset of 20 records.
