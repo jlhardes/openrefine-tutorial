@@ -92,7 +92,7 @@ Goal is to end up with RDF mapping like the following:
     * Add values for each property
     	* Use **Start Date** as text for dc:date
     	* Use **Description from Notebook** as text for dc:title
-    	* Use **Genre URI** as URI for emd:hasType
+    	* Use **Genre URI** as URI for edm:hasType
     	* Use **Topical Subject Headings 1** as text for dc:subject
     	* Use **Creator** as text for dc:creator
     * Use RDF Preview tab as you go to verify that mapping is resulting in desired Linked Data RDF output
