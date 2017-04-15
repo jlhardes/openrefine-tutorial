@@ -18,10 +18,10 @@ Practice cleaning data. Import this project into OpenRefine and you will have a 
 * Clean **Other 2**
 * See how many rows are missing **City**
     * Facet > Text facet
-    * scroll down to end of list for (blank) facet
+    * Scroll down to end of list for (blank) facet
 * See how many rows are missing **State/Province**
 * Format **Start Date**: 
-    * <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression to use: value.toDate().toString('yyyy-MM-dd')
+    * <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression to use: `value.toDate().toString('yyyy-MM-dd')`
     * Edit cells > Transform
     * Enter string above
     * Double-check year is accurate in formatted date
