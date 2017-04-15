@@ -33,18 +33,18 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
 Practice using reconciliation services to turn text strings into Linked Data URIs based on controlled vocabularies. Map fields in dataset to RDF properties and export as Linked Data RDF. Import this project file into OpenRefine and you will have a dataset of 20 records.
 
 ### Wikidata Reconciliation Service
-* On **Corporate Names 1**: choose Reconcile > Start reconciling...
+* **Corporate Names 1**: choose Reconcile > Start reconciling...
 * Click Add Standard Service button and enter: `https://tools.wmflabs.org/openrefine-wikidata/en/api`
-* This adds the reconciliation service. Choose Reconcile > Start reconciling... again and select Wikidata Reconciliation Service from left-side menu
+* This adds the reconciliation service. Choose Reconcile > Start reconciling... again and select 'Wikidata Reconciliation Service' from left-side menu
  * Reconcile against 'public company' in list of type options or 'no particular type' at bottom
 * Review results for how much was reconciled (and how much was not)
 
 ### Thesaurus of Graphic Materials (TGM) Reconciliation Service
-In order to use the TGM reconcilation service, you can download the controlled vocabulary to load as a local file for use in OpenRefine from the Library of Congress: http://id.loc.gov/static/data/vocabularygraphicMaterials.ttl.zip
+You will need the RDF Extension for OpenRefine, available at https://github.com/fadmaa/grefine-rdf-extension/downloads.  Once you download and extract the file, rename the directory `rdf-extension` and move it to your `extensions` folder in OpenRefine, then restart OpenRefine. See <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions">OpenRefine Wiki - Installing Extensions</a> for further help.
 
-Additionally, you will need the RDF Extension for OpenRefine, available at https://github.com/fadmaa/grefine-rdf-extension/downloads.  Once you download and extract the file, rename the directory `rdf-extension` and move it to your `extensions` folder in OpenRefine, then restart OpenRefine. See <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions">OpenRefine Wiki - Installing Extensions</a> for further help.
+In order to use the TGM reconcilation service, you can download and extract the controlled vocabulary to load as a local file for use in OpenRefine from the Library of Congress: http://id.loc.gov/static/data/vocabularygraphicMaterials.ttl.zip
 
-To add TGM Reconciliation Service using `tgm.ttl` file:
+#### Add TGM Reconciliation Service using `tgm.ttl` file:
 * Under RDF > Add reconciliation service > Based on RDF file
     * Name: TGM
     * Upload file: `tmg.ttl` (wherever it is located)
@@ -53,8 +53,8 @@ To add TGM Reconciliation Service using `tgm.ttl` file:
         * Other: http://www.loc.gov/mads/rdf/v1#authoritativeLabel
         * You can open `tgm.ttl` and look at example record in vocab to see that this property is being used for the term label
 
-Reconcile against TGM:
+#### Reconcile against TGM:
 * **Genre1**: Reconcile > Start reconciling...
-* Select TGM from left-side menu options
+* Select 'TGM' from left-side menu
 * Use default type (Topic)
 * Should result in 100% exact matches for all records with genre
