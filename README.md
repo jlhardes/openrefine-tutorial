@@ -36,7 +36,7 @@ Practice using reconciliation services to turn text strings into Linked Data URI
 * **Corporate Names 1**: choose Reconcile > Start reconciling...
 * Click Add Standard Service button and enter: `https://tools.wmflabs.org/openrefine-wikidata/en/api`
 * This adds the reconciliation service. Choose Reconcile > Start reconciling... again and select 'Wikidata Reconciliation Service' from left-side menu
- * Reconcile against 'public company' in list of type options or 'no particular type' at bottom
+  * Reconcile against 'public company' in list of type options or 'no particular type' at bottom
 * Review results for how much was reconciled (and how much was not)
 
 ### Thesaurus of Graphic Materials (TGM) Reconciliation Service
@@ -62,7 +62,7 @@ In order to use the TGM reconcilation service, you can download and extract the 
 ### RDF Mapping
 * Under RDF > Edit RDF Skeleton
 * Add prefixes:
- * loc: http://id.loc.gov/vocabulary/resourceTypes/
- * dc: http://purl.org/dc/elements/1.1/
- * edm: http://www.europeana.eu/schemas/edm/
+  * loc: http://id.loc.gov/vocabulary/resourceTypes/
+  * dc: http://purl.org/dc/elements/1.1/
+  * edm: http://www.europeana.eu/schemas/edm/
 
