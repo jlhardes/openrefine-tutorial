@@ -25,7 +25,7 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
 * Format **Start Date**: 
     * <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression to use: `value.toDate().toString('yyyy-MM-dd')`
     * Edit cells > Transform
-    * Enter string above
+    * Enter excpression above
     * Double-check year is accurate in formatted date
 * Review at steps taken in Undo/Redo
 
