@@ -65,4 +65,13 @@ In order to use the TGM reconcilation service, you can download and extract the 
   * loc: http://id.loc.gov/vocabulary/resourceTypes/
   * dc: http://purl.org/dc/elements/1.1/
   * edm: http://www.europeana.eu/schemas/edm/
+* Add Creator column to dataset to include 'Charles W. Cushman' value
+* Make Genre URI its own column
+    * `cell.recon.match.id`
+* Export > RDF as Turtle
 
+## Other Resources
+* OpenRefine Tutorial from Enipedia - http://is.gd/refine
+    * Provides dataset to create project along with various tasks for cleaning
+* OpenRefine Documentation for User - http://openrefine.org/documentation.html
+    * Includes FAQ, OpenRefine wiki, many other tutorials, and a book recommendation
