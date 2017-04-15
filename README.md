@@ -68,12 +68,12 @@ In order to use the TGM reconcilation service, you can download and extract the 
   * edm: http://www.europeana.eu/schemas/edm/
 
 Goal is to end up with RDF mapping like the following:
-```<http://purl.dlib.indiana.edu/iudl/archives/cushman/P01411> a foaf:Image ;
-	   dc:date "Sat Sep 03 00:00:00 EST 1938" ;
-	   dc:title "A-5 = G.G. bridge from south end." ;
+    <http://purl.dlib.indiana.edu/iudl/archives/cushman/P01411> a foaf:Image ;
+        dc:date "Sat Sep 03 00:00:00 EST 1938" ;
+	dc:title "A-5 = G.G. bridge from south end." ;
    	edm:hasType <http://id.loc.gov/vocabulary/graphicMaterials/tgm000464> ;
    	dc:subject "Mountains" ;
-   	dc:creator "Charles W. Cushman" .```
+   	dc:creator "Charles W. Cushman" .
 
 * Add Creator column to dataset to include 'Charles W. Cushman' value
     * On column with text values (such as **IU Archives Number**) select Edit column > Add column based on this column
