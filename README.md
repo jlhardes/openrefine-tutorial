@@ -71,7 +71,7 @@ In order to use the TGM reconcilation service, you can download and extract the 
 Goal is to end up with RDF output like the following:
 ```
 <http://purl.dlib.indiana.edu/iudl/archives/cushman/P01411> a foaf:Image ;
-	dc:date "Sat Sep 03 00:00:00 EST 1938" ;
+	dc:date "1938-09-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	dc:title "A-5 = G.G. bridge from south end." ;
 	edm:hasType <http://id.loc.gov/vocabulary/graphicMaterials/tgm000464> ;
 	dc:subject "Mountains" ;
