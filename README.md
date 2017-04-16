@@ -76,7 +76,6 @@ Goal is to end up with RDF mapping like the following:
 	edm:hasType <http://id.loc.gov/vocabulary/graphicMaterials/tgm000464> ;
 	dc:subject "Mountains" ;
 	dc:creator "Charles W. Cushman" .
-}
 ```
 
 * Add Creator column to dataset to include 'Charles W. Cushman' value
