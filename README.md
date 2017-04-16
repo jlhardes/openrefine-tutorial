@@ -22,7 +22,7 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
     * Facet > Text facet
     * Scroll down to end of list for (blank) facet
 * See how many rows are missing **State/Province**
-* Format **Start Date**: `
+* Format **Start Date**: 
     * Edit cells > Transform
     * Enter <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression: `value.toDate().toString('yyyy-MM-dd')`
     * Double-check year is accurate in formatted date (HINT: you can change anything within "yyyy-MM-dd" to actual numbers and Cushman only took photographs in the 1900s)
