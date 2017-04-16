@@ -69,7 +69,7 @@ In order to use the TGM reconcilation service, you can download and extract the 
   * edm: http://www.europeana.eu/schemas/edm/
 
 Goal is to end up with RDF mapping like the following:
-```javascript
+```
 <http://purl.dlib.indiana.edu/iudl/archives/cushman/P01411> a foaf:Image ;
 	dc:date "Sat Sep 03 00:00:00 EST 1938" ;
 	dc:title "A-5 = G.G. bridge from south end." ;
