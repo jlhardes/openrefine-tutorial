@@ -68,7 +68,7 @@ In order to use the TGM reconcilation service, you can download and extract the 
   * dc: http://purl.org/dc/elements/1.1/
   * edm: http://www.europeana.eu/schemas/edm/
 
-Goal is to end up with RDF mapping like the following:
+Goal is to end up with RDF output like the following:
 ```
 <http://purl.dlib.indiana.edu/iudl/archives/cushman/P01411> a foaf:Image ;
 	dc:date "Sat Sep 03 00:00:00 EST 1938" ;
