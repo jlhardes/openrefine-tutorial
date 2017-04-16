@@ -91,7 +91,7 @@ Goal is to end up with RDF output like the following:
     * Add properties to match each property listed in goal
     * Add values for each property
     	* Use **Start Date** as text for dc:date
-		* Make sure this cell's content is used as date ('YYYY-MM-DD')
+	  * Make sure this cell's content is used as date ('YYYY-MM-DD')
     	* Use **Description from Notebook** as text for dc:title
     	* Use **Genre URI** as URI for edm:hasType
     	* Use **Topical Subject Headings 1** as text for dc:subject
