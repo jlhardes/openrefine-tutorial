@@ -26,8 +26,6 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
     * Edit cells > Transform
     * Enter <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression: `value.toDate().toString('yyyy-MM-dd')`
     * Double-check year is accurate in formatted date (HINT: you can change anything within "yyyy-MM-dd" to actual numbers and Cushman only took photographs in the 1900s)
-    * Change cell data type to date:
-    	* Edit cells > Commone transform > To date
 * Review steps taken in Undo/Redo tab on left side of project view
 
 ## Cushman-Dataset-Small.openrefine.tar.gz
