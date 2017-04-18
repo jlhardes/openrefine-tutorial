@@ -1,6 +1,8 @@
 # openrefine-tutorial
 This tutorial taught as part of <a href="https://libraries.indiana.edu/seminars-and-workshops">Indiana University Scholars Commons Workshop Series</a>. Offers sample OpenRefine projects and lessons for trying clean-up tasks, reconciliation to Linked Data, and exporting as RDF.
 
+We're using <a href="http://openrefine.org/download.html">OpenRefine 2.6</a>.
+
 We're skipping the process to create a project in OpenRefine due to location of OpenRefine app on computers used in workshop series.
 
 The dataset used in this tutorial is from the Indiana University Libraries, Digital Collection Services' <a href="https://github.com/iulibdcs/cushman_photos">Github repository for the Charles W. Cushman Photograph Collection</a>. 
@@ -42,7 +44,7 @@ Practice using reconciliation services to turn text strings into Linked Data URI
 ### Thesaurus of Graphic Materials (TGM) Reconciliation Service
 
 #### Add RDF Extension
-You will need the RDF Extension for OpenRefine, available at https://github.com/fadmaa/grefine-rdf-extension/releases.  Once you download and extract the file, move it to your `extensions` folder in OpenRefine, then restart OpenRefine. You should see an 'RDF' drop-down menu in the upper right of OpenRefine when viewing a project if the extension installed successfully. See <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions">OpenRefine Wiki - Installing Extensions</a> for further help.
+You will need the RDF Extension 0.9 for OpenRefine, available at https://github.com/fadmaa/grefine-rdf-extension/releases.  Once you download and extract the file, move it to your `extensions` folder in OpenRefine, then restart OpenRefine. You should see an 'RDF' drop-down menu in the upper right of OpenRefine when viewing a project if the extension installed successfully. See <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installing-Extensions">OpenRefine Wiki - Installing Extensions</a> for further help.
 
 In order to use the TGM reconcilation service, you can download and extract the controlled vocabulary from the Library of Congress to load as a local file for use in OpenRefine: http://id.loc.gov/static/data/vocabularygraphicMaterials.ttl.zip
 
