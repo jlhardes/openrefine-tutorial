@@ -57,7 +57,7 @@ These instructions follow closely with those provided in the <a href="http://eni
   * Enter `cells["columnName"].value + ", " + cells["columnName"].value` to put together the values from City, State/Province, and Country columns
   * Edit column > Add column by fetching urls
   * In Expression, enter `"http://maps.google.com/maps/api/geocode/json?sensor=false&address=" + escape(value, "url")`, set Throttle delay to 500 milliseconds, and name the new column
-* This request will take 3-4 minutes and Google limits the number of requests per day but this should return JSON output in each row with an address
+* This request will take 3-4 minutes for these 20 records and Google limits the number of requests per day but this should return JSON output in each row with an address
 * To pull out just the coordinate information from this data
   * Edit column > Add column based on this column
   * In Expression, enter `with(value.parseJson().results[0].geometry.location, pair, pair.lat +", " + pair.lng)`
