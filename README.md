@@ -47,7 +47,7 @@ Practice using reconciliation services to turn text strings into Linked Data URI
 * Try reconciling on **Topical Subject Headings 1** and see how some matches happened but many still do not retrieve a match
 
 ### Geocoding (retrieving coordinates)
-These instructions follow closely with those provided in the <a href="http://is.gd/refine">OpenRefine Tutorial from Enipedia</a> linked at the end of this tutorial.
+These instructions follow closely with those provided in the <a href="http://enipedia.tudelft.nl/wiki/Google_Refine_Tutorial#Geocoding_names_and_addresses">OpenRefine Tutorial from Enipedia - Geocoding names and addresses</a> linked at the end of this tutorial.
 * Location info is split into separate columns but we need something combined together to query against Google Maps for coordinates
 * Duplicate the Country column for use as a Full Address
   * Edit column > Add column based on this column
