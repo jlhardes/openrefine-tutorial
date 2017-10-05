@@ -46,6 +46,26 @@ Practice using reconciliation services to turn text strings into Linked Data URI
   * Any terms that were matched to a URI from the Wikidata Reconciliation Service will show the corresponding URI for that term
 * Try reconciling on **Topical Subject Headings 1** and see how some matches happened but many still do not retrieve a match
 
+### Geocoding (retrieving coordinates)
+These instructions follow closely with those provided in the <a href="http://is.gd/refine">OpenRefine Tutorial from Enipedia</a> linked at the end of this tutorial.
+* Location info is split into separate columns but we need something combined together to query against Google Maps for coordinates
+* Duplicate the Country column for use as a Full Address
+  * Edit column > Add column based on this column
+  * Name the new column
+* In that new column
+  * Edit cells > Transform
+  * Enter `cells["columnName"].value + ", " + cells["columnName"].value` to put together the values from City, State/Province, and Country columns
+  * Edit column > Add column by fetching urls
+  * In Expression, enter `"http://maps.google.com/maps/api/geocode/json?sensor=false&address=" + escape(value, "url")`, set Throttle delay to 500 milliseconds, and name the new column
+* This request will take 3-4 minutes and Google limits the number of requests per day but this should return JSON output in each row with an address
+* To pull out just the coordinate information from this data
+  * Edit column > Add column based on this column
+  * In Expression, enter `with(value.parseJson().results[0].geometry.location, pair, pair.lat +", " + pair.lng)`
+  * Name the new column
+  * Split that new column to divide up latitude and longitude
+    * Edit column > Split into several columns (use "," as separator)
+    * Rename these columns using Edit column > Rename this column
+
 ### Thesaurus of Graphic Materials (TGM) Reconciliation Service
 
 #### Add RDF Extension
