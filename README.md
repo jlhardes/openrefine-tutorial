@@ -39,6 +39,11 @@ Practice using reconciliation services to turn text strings into Linked Data URI
 * This adds the reconciliation service. Choose Reconcile > Start reconciling... again and select 'Wikidata Reconciliation for OpenRefine (en)' from left-side menu
   * Reconcile against 'public company' in list of type options or 'no particular type' at bottom
 * Review results for how much was reconciled (and how much was not)
+* To see URI values that were matched:
+  * Edit column > Add column based on this column
+  * In Expression, enter the URI value up to the identifier: `"https://www.wikidata.com/wiki/"` and then `+ cell.recon.match.id`
+  * Name the new column
+  * Any terms that were matched to a URI from the Wikidata Reconciliation Service will show the corresponding URI for that term
 * Try reconciling on **Topical Subject Headings 1** and see how some matches happened but many still do not retrieve a match
 
 ### Thesaurus of Graphic Materials (TGM) Reconciliation Service
