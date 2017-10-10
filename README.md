@@ -27,7 +27,7 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
 * See how many rows contain unidentifiable characters � in **City**
     * Ideally character encoding issues are something to fix with original data before OpenRefine import, but you can do the following if that is not an option
     * Text filter
-    * Paste �
+    * Paste � to search for rows containing that character
     * Facet > Text facet
     * In Text Facet result, click city containing unidentifiable characters
     * In Text Facet result, mouseover city name and click "edit" option
