@@ -26,6 +26,9 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
 * See how many rows are missing **City**
 * See how many cities contain unidentifiable characters �
     * Ideally this character encoding issue is something to fix with original data before OpenRefine import, but you can do the following if that is not an option
+    * Text filter
+    * Paste �
+    * Facet > Text facet
     * In Text Facet result, click city containing unidentifiable characters
     * In Text Facet result, mouseover city name and click "edit" option
     * Replace unidentifiable character with correct character (from text editor using Unicode UTF-8)
