@@ -24,7 +24,7 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
     * Facet > Text facet
     * Scroll down to end of list for (blank) facet
 * See how many rows are missing **City**
-* See how many cities contain unidentifiable characters �
+* See how many rows contain unidentifiable characters � **City**
     * Ideally this character encoding issue is something to fix with original data before OpenRefine import, but you can do the following if that is not an option
     * Text filter
     * Paste �
