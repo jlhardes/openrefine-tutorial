@@ -20,10 +20,18 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
     * Review any results and select corrections, then merge selected and close or re-cluster
 * Clean **Other 1**
 * Clean **Other 2**
-* See how many rows are missing **City**
+* See how many rows are missing **State/Province**
     * Facet > Text facet
     * Scroll down to end of list for (blank) facet
-* See how many rows are missing **State/Province**
+* See how many rows are missing **City**
+* See how many cities contain unidentifiable characters �
+    * Ideally this character encoding issue is something to fix with original data before OpenRefine import, but you can do the following if that is not an option
+    * In Text Facet result, click city containing unidentifiable characters
+    * In Text Facet result, mouseover city name and click "edit" option
+    * Replace unidentifiable character with correct character (from text editor using Unicode UTF-8)
+    * Examples:
+        * Ciudad Ju�rez > Ciudad Juárez
+	* Dh�los > Dhílos
 * Format **Start Date**: 
     * Edit cells > Transform
     * Enter <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression: `value.toDate().toString('yyyy-MM-dd')`
@@ -128,6 +136,8 @@ Goal is to end up with RDF output like the following:
 * Export > RDF as Turtle
 
 ## Other Resources
+* <a href="https://github.com/OpenRefine/OpenRefine/wiki/Recipes">Recipes from OpenRefine Wiki</a>
+    * Useful recipes for achieving certain tasks in OpenRefine
 * <a href="http://is.gd/refine">OpenRefine Tutorial from Enipedia</a>
     * Provides dataset to create project along with various tasks for cleaning
 * <a href="http://openrefine.org/documentation.html">OpenRefine Documentation for User</a>
