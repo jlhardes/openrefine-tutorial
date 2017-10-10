@@ -31,7 +31,7 @@ Practice cleaning data. Import this project file into OpenRefine and you will ha
     * Replace unidentifiable character with correct character (from text editor using Unicode UTF-8)
     * Examples:
         * Ciudad Ju�rez > Ciudad Juárez
-	* Dh�los > Dhílos
+        * Dh�los > Dhílos
 * Format **Start Date**: 
     * Edit cells > Transform
     * Enter <a href="https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language">GREL</a> expression: `value.toDate().toString('yyyy-MM-dd')`
