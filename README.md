@@ -139,10 +139,10 @@ Goal is to end up with RDF output like the following:
 * Export > RDF as Turtle
 
 ## Other Resources
-* <a href="https://github.com/OpenRefine/OpenRefine/wiki/Recipes">Recipes from OpenRefine Wiki</a>
-    * Useful recipes for achieving certain tasks in OpenRefine
 * <a href="http://is.gd/refine">OpenRefine Tutorial from Enipedia</a>
     * Provides dataset to create project along with various tasks for cleaning
+* <a href="https://github.com/OpenRefine/OpenRefine/wiki/Recipes">Recipes from OpenRefine Wiki</a>
+    * Useful recipes for achieving certain tasks in OpenRefine
 * <a href="http://openrefine.org/documentation.html">OpenRefine Documentation for User</a>
     * Includes FAQ, OpenRefine wiki, many other tutorials, and a book recommendation
 * <a href="https://docs.google.com/document/d/1rvVOc69NJtNacTqgmkOliOBGDdYI4J1-qqIcRuFrou0/edit?usp=sharing">OpenRefine Instructions: A Guide to Creating an OpenRefine Project Using the Charles W. Cushman Photograph Collection Metadata Dataset</a>
