@@ -4,14 +4,14 @@ This tutorial taught as part of <a href="https://libraries.indiana.edu/seminars-
 We're using <a href="http://openrefine.org/download.html">OpenRefine 2.6</a>.
 
 We're skipping the process to create a project in OpenRefine due to location of OpenRefine app on computers used in workshop series. To get started in OpenRefine:
-* Download the files available here (Cushman-Dataset-Full.tar.gz and Cushman-Dataset-Small.tar.gz)
+* Download the files available here (Cushman-Dataset-Full.openrefine.tar.gz and Cushman-Dataset-Small.openrefine.tar.gz)
 * Open OpenRefine
   * This should launch a browser at the following url: http://127.0.0.1:3333
 * Select "Import Project" from left-side menu
-* Use "Choose File" button to locate Cushman-Dataset-Full.tar.gz
+* Use "Choose File" button to locate Cushman-Dataset-Full.openrefine.tar.gz
 * Click "Import Project"
 * Click the OpenRefine or GoogleRefine logo in upper left corner to return to initial menu
-* Repeat steps from "Select 'Import Project'..." to load Cushman-Dataset-Small.tar.gz
+* Repeat steps from "Select 'Import Project'..." to load Cushman-Dataset-Small.openrefine.tar.gz
 
 The dataset used in this tutorial is from the Indiana University Libraries, Digital Collection Services' <a href="https://github.com/iulibdcs/cushman_photos">Github repository for the Charles W. Cushman Photograph Collection</a>. 
 
