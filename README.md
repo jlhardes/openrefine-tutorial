@@ -11,7 +11,7 @@ We're skipping the process to create a project in OpenRefine due to location of 
 * Use "Choose File" button to locate Cushman-Dataset-Full.tar.gz
 * Click "Import Project"
 * Click the OpenRefine or GoogleRefine logo in upper left corner to return to initial menu
-* Repeat steps from "Select "Import Project"..." to load Cushman-Dataset-Small.tar.gz
+* Repeat steps from "Select 'Import Project'..." to load Cushman-Dataset-Small.tar.gz
 
 The dataset used in this tutorial is from the Indiana University Libraries, Digital Collection Services' <a href="https://github.com/iulibdcs/cushman_photos">Github repository for the Charles W. Cushman Photograph Collection</a>. 
 
