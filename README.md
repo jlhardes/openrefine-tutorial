@@ -147,6 +147,9 @@ Goal is to end up with RDF output like the following:
 * Export > RDF as Turtle
 
 ## Other Resources
+* Miriam Posner's <a href="http://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/">Get Started with OpenRefine</a>
+    * Part of her <a href="http://miriamposner.com/classes/dh101f17/">Introduction to Digital Humanities</a> class at UCLA
+    * Includes steps to install OpenRefine, create a project, and export your data
 * <a href="http://is.gd/refine">OpenRefine Tutorial from Enipedia</a>
     * Provides dataset to create project along with various tasks for cleaning
 * <a href="https://github.com/OpenRefine/OpenRefine/wiki/Recipes">Recipes from OpenRefine Wiki</a>
